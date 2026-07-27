@@ -1,1 +1,215 @@
-htm
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alaa & Matteo - Wedding</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: #3b2f2f;
+  background: linear-gradient(135deg, #f7f1e1, #e7d3b0);
+  overflow-x: hidden;
+}
+
+/* luxury glow background */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: radial-gradient(circle at top, rgba(255,255,255,0.7), transparent 60%);
+  pointer-events: none;
+}
+
+/* header */
+header {
+  padding: 70px 20px 30px;
+  animation: fadeIn 1.2s ease;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 54px;
+  margin: 0;
+  color: #6b3e2e;
+  letter-spacing: 1px;
+}
+
+.arabic {
+  font-size: 22px;
+  margin-top: 8px;
+  color: #7a4a33;
+}
+
+header p {
+  font-size: 18px;
+  margin: 6px 0;
+}
+
+/* image */
+.photo img {
+  width: 90%;
+  max-width: 520px;
+  border-radius: 22px;
+  border: 6px solid rgba(255,255,255,0.7);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+  animation: fadeUp 1.5s ease;
+}
+
+/* luxury glass frame */
+.box {
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(12px);
+  margin: 25px auto;
+  padding: 28px;
+  max-width: 620px;
+  border-radius: 18px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+  border: 1px solid rgba(255,255,255,0.6);
+  animation: fadeUp 1.3s ease;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: #8a4b2a;
+}
+
+/* MAP BUTTON LUXURY */
+.map-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 22px;
+  background: linear-gradient(135deg, #8a4b2a, #6b3e2e);
+  color: #fff;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+.map-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+/* countdown */
+.countdown .time {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.countdown .time div {
+  background: rgba(255,255,255,0.7);
+  padding: 14px 12px;
+  border-radius: 14px;
+  min-width: 70px;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.countdown span {
+  font-size: 26px;
+  font-weight: bold;
+  color: #6b3e2e;
+}
+
+.countdown small {
+  font-size: 12px;
+  color: #8a5a44;
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  h1 { font-size: 36px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Alaa & Matteo</h1>
+  <p class="arabic">علاء و ماتيو</p>
+  <p>Ci sposiamo</p>
+  <p>28 Novembre 2026</p>
+</header>
+
+<div class="photo">
+  <img src="WhatsApp Image 2026-04-30 at 17.57.45.jpeg" alt="Alaa e Matteo">
+</div>
+
+<div class="box countdown">
+  <h2>Manca al nostro giorno</h2>
+  <div class="time">
+    <div><span id="days">0</span><small>giorni</small></div>
+    <div><span id="hours">0</span><small>ore</small></div>
+    <div><span id="minutes">0</span><small>min</small></div>
+    <div><span id="seconds">0</span><small>sec</small></div>
+  </div>
+</div>
+
+<div class="box">
+  <h2>Cerimonia</h2>
+  <p>Sala Rossa, Campidoglio - Roma</p>
+  <p>Ore 11:00</p>
+  <a class="map-button"
+     href="https://maps.app.goo.gl/t9sntG4JnVvUdfXa9"
+     target="_blank">
+    📍 Naviga con Google Maps
+  </a>
+</div>
+
+<div class="box">
+  <h2>Ricevimento</h2>
+  <p>La Porta del Principe - Roma</p>
+  <p>Ore 12:30</p>
+
+  <a class="map-button"
+     href="https://www.google.com/maps/place/La+Porta+del+Principe+Srl/@41.8100853,12.327693,17z/data=!3m1!4b1!4m6!3m5!1s0x1325f6b399a17053:0x45831a6f7420ed9e!8m2!3d41.8100853!4d12.3302679!16s%2F[...]"
+     target="_blank">
+    📍 Naviga con Google Maps
+  </a>
+</div>
+
+<div class="box">
+  <h2>RSVP</h2>
+  <p>Conferma la tua presenza</p>
+  <a href="https://forms.gle/" target="_blank">Invia risposta 💌</a>
+</div>
+
+<div class="box">
+  <p>Se desideri farci un regalo, puoi utilizzare il seguente IBAN:</p>
+  <p style="font-family: monospace; font-size: 16px; margin-top: 15px; word-break: break-all;">
+    <strong>IT XX XXXX XXXX XXXX XXXX XXXX XX</strong>
+  </p>
+  <p style="font-size: 14px; margin-top: 8px; color: #7a4a33;">Intestatario: [Nome Completo]</p>
+</div>
+
+<script>
+const weddingDate = new Date("2026-11-28T09:30:00").getTime();
+
+function updateCountdown() {
+  const now = new Date().getTime();
+  const diff = weddingDate - now;
+
+  document.getElementById("days").innerText = Math.floor(diff / (1000*60*60*24));
+  document.getElementById("hours").innerText = Math.floor((diff/(1000*60*60))%24);
+  document.getElementById("minutes").innerText = Math.floor((diff/(1000*60))%60);
+  document.getElementById("seconds").innerText = Math.floor((diff/1000)%60);
+}
+
+setInterval(updateCountdown, 1000);
+updateCountdown();
+</script>
+
+</body>
+</html>
